@@ -1,0 +1,14 @@
+# Rider-specific files
+.idea/
+*.sln.iml
+
+# Build output directories
+bin/
+obj/
+
+# Rider caches and logs
+.idea/**/cache/
+.idea/**/logs/
+
+# User-specific files
+*.user
