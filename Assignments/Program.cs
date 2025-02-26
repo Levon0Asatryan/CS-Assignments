@@ -24,6 +24,11 @@ namespace Assignments
 
             // Assigment 2
             // ConsoleSquare.DrawSquare();
+
+            // Assigment 3
+            // ArrayTasks.Task1();
+            // ArrayTasks.Task2();
+            // ArrayTasks.Task3();
         }
     }
 }
