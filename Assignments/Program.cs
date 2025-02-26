@@ -6,6 +6,7 @@ namespace Assignments
     {
         private static void Main()
         {
+            // Assignments 1
             // ArrayAndStringTasks.ArrayTask1();
             // ArrayAndStringTasks.ArrayTask2();
             // ArrayAndStringTasks.ArrayTask3();
@@ -14,6 +15,12 @@ namespace Assignments
             // ArrayAndStringTasks.ArrayTask6();
             // ArrayAndStringTasks.ArrayTask7();
             // ArrayAndStringTasks.ArrayTask8();
+            // ArrayAndStringTasks.StringTask1();
+            // ArrayAndStringTasks.StringTask2();
+            // ArrayAndStringTasks.StringTask3();
+            // ArrayAndStringTasks.StringTask4();
+            // ArrayAndStringTasks.StringTask5();
+            ArrayAndStringTasks.StringTask6();
         }
     }
 }

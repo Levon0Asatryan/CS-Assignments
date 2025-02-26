@@ -1,5 +1,8 @@
 namespace Assignments;
 
+using System.Text;
+using System.Text.RegularExpressions;
+
 public static class ArrayAndStringTasks
 {
     private static T[] GetArrayFromConsole<T>(int count, Func<string, T> parseFunction)
@@ -157,5 +160,63 @@ public static class ArrayAndStringTasks
 
         disorderedWords[^1] = letters;
         Console.WriteLine($"{newWord} -\n{string.Join(Environment.NewLine, disorderedWords[^1])}");
+    }
+
+    public static void StringTask1()
+    {
+        Console.Write("Enter the string: ");
+        var input = Console.ReadLine() ?? "";
+        var reversed = new string(input.Reverse().ToArray());
+        Console.WriteLine(reversed);
+    }
+
+    public static void StringTask2()
+    {
+        Console.Write("Enter the string: ");
+        var input = Console.ReadLine() ?? "";
+        var cleaned = Regex.Replace(input, "[^A-Za-z0-9]", "").ToLowerInvariant();
+        var isPalindrome = cleaned == new string(cleaned.Reverse().ToArray());
+        Console.WriteLine(isPalindrome ? "Palindrome" : "Not a palindrome");
+    }
+
+    public static void StringTask3()
+    {
+        Console.Write("Enter the string: ");
+        var input = Console.ReadLine() ?? "";
+        var vowelCount = input.ToLower().Count(c => "aeiou".Contains(c));
+        Console.WriteLine($"Vowel count: {vowelCount}");
+    }
+
+    public static void StringTask4()
+    {
+        Console.Write("Enter the string: ");
+        var input = Console.ReadLine() ?? "";
+        var noSpaces = input.Replace(" ", "");
+        Console.WriteLine("String without spaces: " + noSpaces);
+    }
+
+    public static void StringTask5()
+    {
+        Console.Write("Enter the string: ");
+        var input = Console.ReadLine() ?? "";
+        var withoutA = input.Replace("a", "*").Replace("A", "*");
+        Console.WriteLine(withoutA);
+    }
+
+    public static void StringTask6()
+    {
+        // StringBuilder example
+        var words = Console.ReadLine()?.Split(' ') ?? ["Hello", "Word"];
+
+        var sb = new StringBuilder();
+        for (int i = 0; i < words.Length; i++)
+        {
+            sb.Append(words[i]);
+            if (i < words.Length - 1)
+            {
+                sb.Append(" ");
+            }
+        }
+        Console.WriteLine(sb.ToString());
     }
 }
