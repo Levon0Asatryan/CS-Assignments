@@ -29,6 +29,10 @@ namespace Assignments
             // ArrayTasks.Task1();
             // ArrayTasks.Task2();
             // ArrayTasks.Task3();
+
+            // Assigment 4
+            // StringTasks.Task1();
+            StringTasks.Task2();
         }
     }
 }

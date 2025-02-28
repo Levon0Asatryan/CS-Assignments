@@ -209,7 +209,7 @@ public static class ArrayAndStringTasks
         var words = Console.ReadLine()?.Split(' ') ?? ["Hello", "Word"];
 
         var sb = new StringBuilder();
-        for (int i = 0; i < words.Length; i++)
+        for (var i = 0; i < words.Length; i++)
         {
             sb.Append(words[i]);
             if (i < words.Length - 1)
