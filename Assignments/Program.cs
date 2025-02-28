@@ -23,16 +23,19 @@ namespace Assignments
             // ArrayAndStringTasks.StringTask6();
 
             // Assigment 2
+            // Lab1
             // ConsoleSquare.DrawSquare();
 
             // Assigment 3
+            // Lab2
             // ArrayTasks.Task1();
             // ArrayTasks.Task2();
             // ArrayTasks.Task3();
 
             // Assigment 4
+            // Lab3
             // StringTasks.Task1();
-            StringTasks.Task2();
+            // StringTasks.Task2();
         }
     }
 }
