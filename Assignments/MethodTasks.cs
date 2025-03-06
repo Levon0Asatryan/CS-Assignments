@@ -15,13 +15,13 @@ class StudentGrades
 
     private static void DisplayGrades(string studentName, params int[] grades)
     {
-        Console.WriteLine($"Ուսանող: {studentName}");
-        Console.WriteLine("Գնահատականներ: " + string.Join(", ", grades));
+        Console.WriteLine($"Student: {studentName}");
+        Console.WriteLine("Grades: " + string.Join(", ", grades));
 
         CalculateAverage(grades, out var average);
-        Console.WriteLine($"Միջին գնահատականը: {average}");
+        Console.WriteLine($"Avg Grade: {average}");
 
-        Console.WriteLine("Արդյունք: " + (IsPassed(average) ? "Անցավ" : "Չանցավ"));
+        Console.WriteLine("Result: " + (IsPassed(average) ? "Pass" : "Fail"));
         Console.WriteLine();
     }
 
@@ -33,7 +33,7 @@ class StudentGrades
     public static void Students()
     {
         int[] grades = [60, 70, 50, 80];
-        const string name = "Արմեն";
+        const string name = "Armen";
         DisplayGrades(name, grades);
 
         const int newGrade = 75;
