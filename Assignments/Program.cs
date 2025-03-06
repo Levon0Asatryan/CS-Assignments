@@ -36,6 +36,9 @@ namespace Assignments
             // Lab3
             // StringTasks.Task1();
             // StringTasks.Task2();
+
+            // Assigment 5, Methods
+            // MethodTasks.RunTasks();
         }
     }
 }
