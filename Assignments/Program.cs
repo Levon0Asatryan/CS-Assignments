@@ -38,10 +38,13 @@ namespace Assignments
             // StringTasks.Task2();
 
             // Assigment 5, Methods
-            MethodTasks.RunTasks();
+            // MethodTasks.RunTasks();
 
             // Assigment 6
-            EnumTasks.RunTasks();
+            // EnumTasks.RunTasks();
+
+            // Assigment 7, Structs
+            StructTasks.RunTasks();
         }
     }
 }
