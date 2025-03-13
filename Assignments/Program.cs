@@ -44,7 +44,10 @@ namespace Assignments
             // EnumTasks.RunTasks();
 
             // Assigment 7, Structs
-            StructTasks.RunTasks();
+            // StructTasks.RunTasks();
+
+            // Assigment 8, Constructor
+            ConstructorTasks.RunTasks();
         }
     }
 }
