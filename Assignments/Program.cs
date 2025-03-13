@@ -1,4 +1,5 @@
 ﻿using System;
+using Constructor;
 
 namespace Assignments
 {
@@ -47,7 +48,10 @@ namespace Assignments
             // StructTasks.RunTasks();
 
             // Assigment 8, Constructor
-            ConstructorTasks.RunTasks();
+            // ConstructorTasks.RunTasks();
+
+            // Assigment 9, EnumAndTasks
+            EnumAndStructsTasks.RunTasks();
         }
     }
 }
