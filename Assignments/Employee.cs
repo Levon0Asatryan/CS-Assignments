@@ -6,7 +6,13 @@ public enum EmployeeState
     FullTime,
 }
 
-public class Employee(int id, string name, double salary, EmployeeState state, int time)
+public class Employee(
+    int id = 0,
+    string name = "Undefined",
+    double salary = 0,
+    EmployeeState state = EmployeeState.FullTime,
+    int time = 0
+)
 {
     //time is monthly based
     public void Info()
@@ -32,7 +38,7 @@ public class EmployeeTasks()
 {
     public static void RunTasks()
     {
-        var employee = new Employee(1, "Suren", 20000, EmployeeState.FullTime, 165);
+        var employee = new Employee(1, "Suren", 20000, EmployeeState.FullTime);
 
         employee.Info();
         Console.WriteLine(employee.GetBonus());

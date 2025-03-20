@@ -53,7 +53,9 @@ namespace Assignments
             // Assigment 9, EnumAndTasks
             // EnumAndStructsTasks.RunTasks();
 
-            EmployeeTasks.RunTasks();
+            // EmployeeTasks.RunTasks();
+
+            StaticTasks.RunTasks();
         }
     }
 }
