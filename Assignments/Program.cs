@@ -55,7 +55,9 @@ namespace Assignments
 
             // EmployeeTasks.RunTasks();
 
-            StaticTasks.RunTasks();
+            // StaticTasks.RunTasks();
+
+            PropertyTasks.RunTasks();
         }
     }
 }
