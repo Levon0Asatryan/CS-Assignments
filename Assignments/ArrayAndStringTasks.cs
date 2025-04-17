@@ -3,6 +3,12 @@ namespace Assignments;
 using System.Text;
 using System.Text.RegularExpressions;
 
+// Select() => map() after Select need to be ToArray()
+// Where() => filter() after Select need to be ToArray()
+// Count() gets call back
+// Contains()
+// Replace()
+
 public static class ArrayAndStringTasks
 {
     private static T[] GetArrayFromConsole<T>(int count, Func<string, T> parseFunction)
@@ -174,6 +180,7 @@ public static class ArrayAndStringTasks
     {
         Console.Write("Enter the string: ");
         var input = Console.ReadLine() ?? "";
+
         var cleaned = Regex.Replace(input, "[^A-Za-z0-9]", "").ToLowerInvariant();
         var isPalindrome = cleaned == new string(cleaned.Reverse().ToArray());
         Console.WriteLine(isPalindrome ? "Palindrome" : "Not a palindrome");

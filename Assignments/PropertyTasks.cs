@@ -77,10 +77,7 @@ class Rectangle
     public int Width { get; set; }
     public int Height { get; set; }
 
-    public int Area
-    {
-        get { return Width * Height; }
-    }
+    public int Area => Width * Height;
 
     public static void RunTask()
     {

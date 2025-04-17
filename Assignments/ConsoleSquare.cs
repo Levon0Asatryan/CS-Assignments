@@ -20,9 +20,11 @@ public class ConsoleSquare
         var curTop = Console.CursorTop;
         var curLeft = Console.CursorLeft;
 
+        var random = new Random();
+
         while (true)
         {
-            Console.ForegroundColor = (ConsoleColor)new Random().Next(1, 16);
+            Console.ForegroundColor = (ConsoleColor)random.Next(1, 16);
 
             // Draw top side: left to right
             for (var i = 0; i < a; i++)

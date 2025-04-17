@@ -7,14 +7,17 @@ namespace Constructor
         private string Name;
         private int Age;
 
-        public Person(string name)
-            : this(name, 25) { }
-
         public Person(string name, int age)
         {
             Name = name;
             Age = age;
         }
+
+        public Person(string name)
+            : this(name, 25) { }
+
+        public Person()
+            : this("", 25) { }
 
         public void Display()
         {
@@ -65,6 +68,9 @@ namespace Constructor
             Author = author;
             Price = price;
         }
+
+        public Book()
+            : this("Unknown", "Unknown", 0.0) { }
 
         public void Display()
         {

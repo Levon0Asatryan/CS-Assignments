@@ -150,15 +150,9 @@ static class MathUtils
 
 class Statistics
 {
-    private static double FindAverage(int[] numbers)
-    {
-        return numbers.Average();
-    }
+    private static double FindAverage(int[] numbers) => numbers.Average();
 
-    private static int FindMin(int[] numbers)
-    {
-        return numbers.Min();
-    }
+    private static int FindMin(int[] numbers) => numbers.Min();
 
     private static int FindMax(int[] numbers)
     {
