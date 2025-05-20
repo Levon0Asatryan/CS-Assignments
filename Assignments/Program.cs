@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Reflection;
 using Constructor;
+using IndexerDemo;
 
 namespace Assignments
 {
@@ -58,6 +60,8 @@ namespace Assignments
             // StaticTasks.RunTasks();
 
             // PropertyTasks.RunTasks();
+
+            IndexerTests.Run();
         }
     }
 }
